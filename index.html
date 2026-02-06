@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Abyss Process</title>
+  <meta name="description" content="A minimal, immersive access page for abyss-style visuals." />
+  <meta name="theme-color" content="#05070c" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph (optional but nice for link previews) -->
+  <meta property="og:title" content="The Abyss Process" />
+  <meta property="og:description" content="Minimal access to an abyss-style visual process." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Atmosphere layers -->
+  <div class="currents" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="mist" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="brand">
+      <span class="dot"></span>
+      <span class="brand__name">THE ABYSS PROCESS</span>
+    </div>
+    <a class="nav__link" href="#access">Access</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="kicker reveal">For those who felt it.</p>
+      <h1 class="reveal">
+        Depth is not <span class="muted">3D</span>.<br/>
+        It’s an <span class="muted">illusion</span>.
+      </h1>
+      <p class="lead reveal">
+        This page is not a tutorial. Not a course. Not a “magic prompt”.
+        It’s a concise visual process used to create the feeling of scale, pressure, silence and unease.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a class="btn" id="enterBtn" href="#access">Enter</a>
+        <a class="btn btn--ghost" href="#details">What you get</a>
+      </div>
+
+      <p class="fine reveal">
+        Minimal. One-time access. No false promises.
+      </p>
+    </section>
+
+    <section id="details" class="section">
+      <div class="grid">
+        <div class="card reveal">
+          <h2>Why this exists</h2>
+          <p>
+            People keep asking how these visuals are made.
+            This is for the few who want to understand the construction — not copy the output.
+          </p>
+        </div>
+
+        <div class="card reveal">
+          <h2>What you get</h2>
+          <ul class="list">
+            <li>One core baseline input (as a tool, not a miracle)</li>
+            <li>Rules that control depth, scale, silence, timing</li>
+            <li>Common mistakes that destroy the abyss feeling</li>
+            <li>Clear limitations (what it does NOT do)</li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h2>Not for you if…</h2>
+          <ul class="list">
+            <li>You want instant results</li>
+            <li>You want to copy content 1:1</li>
+            <li>You want “viral shortcuts”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pressure">
+      <h2 class="reveal">Pressure</h2>
+      <p class="reveal">
+        Depth is perceived through silence, scale and delay.
+        The illusion intensifies when information is removed.
+      </p>
+      <div class="pressure__meter reveal" aria-hidden="true">
+        <div class="pressure__bar"></div>
+      </div>
+      <p class="fine reveal muted">
+        Scroll slowly.
+      </p>
+    </section>
+
+    <section id="access" class="section section--access">
+      <div class="access reveal">
+        <div class="access__left">
+          <h2>Access the Process</h2>
+          <p class="lead2">
+            A compact, structured method to build abyss-style immersion.
+            Designed for creators who want the <em>feeling</em>, not the facade.
+          </p>
+
+          <div class="meta">
+            <div class="pill">One-time access</div>
+            <div class="pill">Instant delivery</div>
+            <div class="pill">Private page</div>
+          </div>
+
+          <p class="fine">
+            You’re not buying “my results”. You’re buying the direction and the rules behind the illusion.
+          </p>
+        </div>
+
+        <div class="access__right">
+          <div class="pricebox">
+            <div class="pricebox__top">
+              <span class="label">THE ABYSS PROCESS</span>
+              <span class="tag">v1</span>
+            </div>
+
+            <div class="price">
+              <span class="price__value">€9.99</span>
+              <span class="price__hint">one-time</span>
+            </div>
+
+            <!-- IMPORTANT: Replace this link with your Gumroad / Ko-fi / Stripe Checkout -->
+            <a id="buyBtn" class="btn btn--full" href="https://EXAMPLE-PAYMENT-LINK.com" target="_blank" rel="noreferrer">
+              Enter the Abyss
+            </a>
+
+            <p class="fine muted">
+              Replace the payment link with your checkout URL.
+            </p>
+
+            <details class="faq">
+              <summary>FAQ</summary>
+              <div class="faq__body">
+                <p><strong>Do I need “3D skills”?</strong><br/>No. This is about visual construction and pacing.</p>
+                <p><strong>Will I get the exact same results?</strong><br/>No. Your inputs, style and iterations matter.</p>
+                <p><strong>Is this public?</strong><br/>No. Keep the access link private if you want.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="fine">
+        © <span id="year"></span> The Abyss Process — minimal access page.
+      </p>
+    </footer>
+  </main>
+
+  <!-- Ambient sound (OFF by default). If this link ever breaks, replace it with your own MP3 URL. -->
+  <audio id="hum" loop preload="auto" crossorigin="anonymous">
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9f6b8d0c4b.mp3?filename=deep-ambient-drone-110997.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="soundToggle" class="sound" type="button" aria-pressed="false">
+    Sound: Off
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
